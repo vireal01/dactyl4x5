@@ -1,4 +1,9 @@
-#include "vireal_dactyl.dtsi" // The shared dtsi file is included in the overlay
+#include "vireal_dactyl.dtsi"
+
+&default_transform {
+    col-offset = <6>;
+};
+
 
 // Label of the kscan node in the dtsi
 &kscan0 {
