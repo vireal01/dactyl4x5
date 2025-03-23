@@ -1,7 +1,7 @@
 if SHIELD_VIREAL_DACTYL_RIGHT
 
 config ZMK_KEYBOARD_NAME
-    default "vireal-dactyl-right"
+    default "vireal-dactyl-r"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
@@ -11,7 +11,7 @@ endif
 if SHIELD_VIREAL_DACTYL_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "vireal-dactyl-left"
+    default "vireal-dactyl-l"
 
 endif
 
