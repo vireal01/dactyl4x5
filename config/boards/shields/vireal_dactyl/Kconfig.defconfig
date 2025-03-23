@@ -20,4 +20,8 @@ if SHIELD_VIREAL_DACTYL_RIGHT || SHIELD_VIREAL_DACTYL_LEFT
 config ZMK_SPLIT
     default y
 
+config ZMK_STUDIO
+    default n
+
+
 endif
