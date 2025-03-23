@@ -18,7 +18,7 @@
         compatible = "zmk,matrix-transform";
         columns = <11>;
         rows = <4>;
-        map = 
+        map = <
         //  LKey 1 |LKey 2 |LKey 3 |LKey 4 |LKey 5 |LKey 6          RKey 1 |RKey 2 |RKey 3 |RKey 4 |RKey 5 
             RC(0,0) RC(0,1) RC(0,2) RC(0,3) RC(0,4) RC(0,5)         RC(0,6) RC(0,7) RC(0,8) RC(0,9) RC(0,10)
         //  LKey 7 |LKey 8 |LKey 9 |LKey 10 |LKey 11 |LKey 12       RKey 6 |RKey 7 |RKey 8 |RKey 9 |RKey 10 
