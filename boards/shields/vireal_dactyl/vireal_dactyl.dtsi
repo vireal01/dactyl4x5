@@ -75,14 +75,14 @@
         compatible = "solomon,ssd1306fb";
         reg = <0x3c>;
         width = <128>;
-        height = <32>;
+        height = <64>;
         segment-offset = <0>;
         page-offset = <0>;
         display-offset = <0>;
-        multiplex-ratio = <31>;
+        multiplex-ratio = <63>;
         prechargep = <0x22>;
-        segment-remap;
-        com-invdir;
+        segment-remap; // This parameter flips the display horizontally 
+        com-invdir; //  This parameter flips the display vertically 
     };
 
     // Add this diagnostic scanner
