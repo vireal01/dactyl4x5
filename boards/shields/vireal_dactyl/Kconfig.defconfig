@@ -1,36 +1,26 @@
 if SHIELD_VIREAL_DACTYL_RIGHT
-
 config ZMK_KEYBOARD_NAME
     default "vireal-dactyl-r"
-
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
-
 # Enable display on the central side (right)
 config ZMK_DISPLAY
     default y
-
 endif
 
 if SHIELD_VIREAL_DACTYL_LEFT
-
 config ZMK_KEYBOARD_NAME
     default "vireal-dactyl-l"
-
-# Uncomment the following line if you want display on the left side too
-# config ZMK_DISPLAY
-#    default y
-
+# Display on the left side too
+config ZMK_DISPLAY
+    default y
 endif
 
 if SHIELD_VIREAL_DACTYL_RIGHT || SHIELD_VIREAL_DACTYL_LEFT
-
 config ZMK_SPLIT
     default y
-
 config ZMK_STUDIO
     default n
-
 endif
 
 if ZMK_DISPLAY
@@ -40,4 +30,18 @@ if ZMK_DISPLAY
         default y
     config ZMK_DISPLAY_BLANK_ON_IDLE
         default y
+        
+    # LVGL configurations
+    config LV_Z_VDB_SIZE
+        default 64
+    config LV_Z_DPI
+        default 148
+    config LV_Z_BITS_PER_PIXEL
+        default 1
+    config LV_Z_COLOR_DEPTH
+        default 1
+    config LV_Z_HOR_RES_MAX
+        default 128
+    config LV_Z_VER_RES_MAX
+        default 32
 endif # ZMK_DISPLAY
