@@ -5,13 +5,14 @@
         zmk,kscan = &kscan0;
         zmk,physical-layout = &physical_layout0;
         zmk,matrix_transform = &default_transform;
+        zephyr,display = &oled;  // Add reference to display
     };
 
-    physical_layout0: physical_layout_0 { // First physical layout, use different naming for other layouts
+    physical_layout0: physical_layout_0 {
         compatible = "zmk,physical-layout";
         display-name = "Default Layout";
-        kscan = <&kscan0>; // Label of the kscan node, optional if all layouts use the same
-        transform = <&default_transform>; // Label of the matrix transform for this layout
+        kscan = <&kscan0>;
+        transform = <&default_transform>;
     };
 
     default_transform: keymap_transform_0 {
@@ -41,6 +42,29 @@
 	        , <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
+    };
+};
 
+&i2c0 {
+    status = "okay";
+    clock-frequency = <I2C_BITRATE_STANDARD>;
+    
+    // Configure Pro Micro pins for I2C
+    sda-gpios = <&pro_micro 20 0>;
+    scl-gpios = <&pro_micro 22 0>;
+
+    oled: ssd1306@3c {
+        compatible = "solomon,ssd1306fb";
+        reg = <0x3c>;
+        width = <128>;
+        height = <32>;
+        segment-offset = <0>;
+        page-offset = <0>;
+        display-offset = <0>;
+        multiplex-ratio = <31>;
+        segment-remap;
+        com-invdir;
+        com-sequential;
+        prechargep = <0x22>;
     };
 };

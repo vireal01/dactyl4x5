@@ -4,7 +4,6 @@
     col-offset = <6>;
 };
 
-
 // Label of the kscan node in the dtsi
 &kscan0 {
     col-gpios
@@ -14,4 +13,9 @@
         , <&pro_micro 16 GPIO_ACTIVE_HIGH>
         , <&pro_micro 10 GPIO_ACTIVE_HIGH>
         ;
+};
+
+// Enable the I2C interface for OLED on the right side
+&i2c0 {
+    status = "okay";
 };

@@ -11,3 +11,8 @@
         , <&pro_micro 10 GPIO_ACTIVE_HIGH>
         ;
 };
+
+// Enable the I2C interface for OLED on the left side
+&i2c0 {
+    status = "okay";
+};
