@@ -81,7 +81,7 @@
         display-offset = <0>;
         multiplex-ratio = <31>;
         prechargep = <0x22>;
-        segment-remap; // This parameter flips the display horizontally 
+        // segment-remap; // This parameter flips the display horizontally 
         com-invdir; //  This parameter flips the display vertically 
     };
 
