@@ -73,7 +73,7 @@
 
     oled: ssd1306@3c {
         compatible = "solomon,ssd1306fb";
-        reg = <0x3d>;
+        reg = <0x3c>;
         width = <128>;
         height = <32>;
         segment-offset = <0>;
@@ -84,5 +84,12 @@
         com-invdir;
         com-sequential;
         prechargep = <0x22>;
+    };
+
+    // Add this diagnostic scanner
+    i2c_scanner: i2c_scanner@76 {
+        compatible = "vnd,i2c-scanner";
+        reg = <0x76>;
+        status = "okay";
     };
 };
