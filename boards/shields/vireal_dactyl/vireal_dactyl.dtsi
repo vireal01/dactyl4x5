@@ -45,13 +45,31 @@
     };
 };
 
+// For Pro Micro, we'll use the Arduino pins
+&pinctrl {
+    i2c0_default: i2c0_default {
+        group1 {
+            psels = <NRF_PSEL(TWIM_SDA, 0, 20)>,
+                   <NRF_PSEL(TWIM_SCL, 0, 22)>;
+        };
+    };
+
+    i2c0_sleep: i2c0_sleep {
+        group1 {
+            psels = <NRF_PSEL(TWIM_SDA, 0, 20)>,
+                   <NRF_PSEL(TWIM_SCL, 0, 22)>;
+            low-power-enable;
+        };
+    };
+};
+
 &i2c0 {
+    compatible = "nordic,nrf-twi";
     status = "okay";
+    pinctrl-0 = <&i2c0_default>;
+    pinctrl-1 = <&i2c0_sleep>;
+    pinctrl-names = "default", "sleep";
     clock-frequency = <I2C_BITRATE_STANDARD>;
-    
-    // Configure Pro Micro pins for I2C
-    sda-gpios = <&pro_micro 20 0>;
-    scl-gpios = <&pro_micro 22 0>;
 
     oled: ssd1306@3c {
         compatible = "solomon,ssd1306fb";
