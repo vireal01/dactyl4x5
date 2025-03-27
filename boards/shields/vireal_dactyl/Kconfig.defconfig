@@ -30,6 +30,7 @@ if ZMK_DISPLAY
         default y
     config ZMK_DISPLAY_BLANK_ON_IDLE
         default y
+
     config ZMK_DISPLAY_INVERT
         default y
 endif # ZMK_DISPLAY
