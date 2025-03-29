@@ -46,7 +46,7 @@
 
 &kp LSHFT   &trans        &trans      &trans         &kp LGUI      &kp LS(LGUI)     &mkp MB3       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp BSLH
 
-                                      &kp LCTRL      &mo RAISE     &kp SPACE        &mkp MB2       &kp 1           &mkp MB1
+                                      &kp LCTRL      &mo RAISE     &kp SPACE        &mkp MB2       &mo 3           &mkp MB1
             >;
         };
 
@@ -65,7 +65,7 @@
 
 &bt BT_CLR  &trans    &trans    &trans        &trans        &kp F6       &kp K_PP     &kp LEFT  &kp DOWN  &kp RIGHT  &kp FSLH
 
-                                &kp LCTRL     &mo RAISE     &kp SPACE    &kp ENTER    &kp 1     &kp BSPC
+                                &kp LCTRL     &mo 3         &kp SPACE    &kp ENTER    &kp 1     &kp BSPC
             >;
         };
 
