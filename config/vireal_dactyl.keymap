@@ -1,6 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define DEFAULT 0
 #define RAISE   1
@@ -39,13 +40,13 @@
             //                              |    LCTRL | MO lay 1| SPACE   |                   | ENTER   | Lower | BSPC
 
             bindings = <
-&kp ESC     &kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)
+&kp ESC     &kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)    &kp LS(STAR)    &kp LS(LPAR)     &kp LS(RPAR)
 
-&bt BT_PRV  &kp LS(LT)    &kp LS(GT)  &kp LS(LPAR)   &kp LS(RPAR)  &kp LPAR         &kp LG(UP)     &kp 4         &kp 5         &kp 6         &kp EQUAL
+&bt BT_PRV  &kp LS(LT)    &kp LS(GT)  &kp LS(LPAR)   &kp LS(RPAR)  &kp LPAR         &kp LG(UP)     &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &kp EQUAL
 
-&kp LSHFT   &trans        &trans      &trans         &kp LGUI      &kp LS(LGUI)     &kp LSHFT      &kp 1         &kp 2         &kp 3         &kp BSLH
+&kp LSHFT   &trans        &trans      &trans         &kp LGUI      &kp LS(LGUI)     &mkp MB3       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp BSLH
 
-                                      &kp LCTRL      &mo RAISE     &kp SPACE        &kp ENTER      &kp 1         &kp BSPC
+                                      &kp LCTRL      &mo RAISE     &kp SPACE        &mkp MB2       &kp 1           &mkp MB1
             >;
         };
 
