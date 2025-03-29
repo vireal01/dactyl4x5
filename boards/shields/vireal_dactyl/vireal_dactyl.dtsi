@@ -7,10 +7,6 @@
         zephyr,display = &oled;  // Add reference to display
     };
 
-    &physical_layout0 {
-        transform = <&default_transform>; // Label of the matrix transform this layout uses
-    };
-
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <11>;
