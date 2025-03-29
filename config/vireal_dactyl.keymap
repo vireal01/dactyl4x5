@@ -5,7 +5,7 @@
 #define DEFAULT 0
 #define RAISE   1
 #define LOWER   2
-#define NUMPAD  3 
+#define NUMPAD  3
 
 / {
     keymap {
@@ -20,7 +20,7 @@
             //                              |    LCTRL | MO lay 1| SPACE   |                   | ENTER   | Lower | BSPC
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E      &kp R      &kp T        &kp B      &kp U      &kp I      &kp O    &kp P
+&kp TAB    &kp Q  &kp W  &kp E      &kp R      &kp T        &kp Y      &kp U      &kp I      &kp O    &kp P
 
 &kp LALT   &kp A  &kp S  &kp D      &kp F      &kp G        &kp H      &kp J      &kp K      &kp L    &kp L
 
@@ -39,13 +39,13 @@
             //                              |    LCTRL | MO lay 1| SPACE   |                   | ENTER   | Lower | BSPC
 
             bindings = <
-&bt BT_NXT  &trans    &trans     &trans     &trans     &kp LBKT     &kp RBKT     &kp 7  &kp 8     &kp 9  &trans
+&kp ESC     &kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)
 
-&bt BT_PRV  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &kp LPAR     &kp RPAR     &kp 4  &kp 5     &kp 6  &kp MINUS
+&bt BT_PRV  &kp LS(LT)    &kp LS(GT)  &kp LS(LPAR)   &kp LS(RPAR)  &kp LPAR         &kp LG(UP)     &kp 4         &kp 5         &kp 6         &kp EQUAL
 
-&bt BT_CLR  &trans    &trans     &trans     &trans     &kp F6       &bootloader  &kp 1  &kp 2     &kp 3  &kp FSLH
+&kp LSHFT   &trans        &trans      &trans         &kp LGUI      &kp LS(LGUI)     &kp LSHFT      &kp 1         &kp 2         &kp 3         &kp BSLH
 
-                                 &kp LCTRL  &mo RAISE  &kp SPACE    &kp ENTER    &kp 1  &kp BSPC
+                                      &kp LCTRL      &mo RAISE     &kp SPACE        &kp ENTER      &kp 1         &kp BSPC
             >;
         };
 
@@ -58,13 +58,13 @@
             //                               |    LCTRL | MO lay 1| SPACE  |                   | ENTER   | Lower | BSPC
 
             bindings = <
-&bt BT_NXT  &trans    &trans     &trans     &trans     &kp LBKT     &kp RBKT     &kp 7  &kp 8     &kp 9  &trans
+&kp ESC     &kp N1    &kp N2    &kp N3        &kp N4        &kp N5       &kp N6       &kp N7    &kp N8    &kp N9     &kp N0
 
-&bt BT_PRV  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &kp LPAR     &kp LEFT    &kp UP      &kp DOWN    &kp RIGHT  &kp SEMI
+&bt BT_PRV  &kp LBKT  &kp RBKT  &kp LS(LBRC)  &kp LS(RBRC)  &kp SQT      &kp LS(DQT)  &kp UP    &kp UP    &kp RIGHT  &kp PLUS
 
-&bt BT_CLR  &trans    &trans     &trans     &trans     &kp F6       &kp K_PP    &mo 3       &kp LGUI    &kp LGUI   &kp FSLH
+&bt BT_CLR  &trans    &trans    &trans        &trans        &kp F6       &kp K_PP     &kp LEFT  &kp DOWN  &kp RIGHT  &kp FSLH
 
-                                 &kp LCTRL  &mo RAISE  &kp SPACE    &kp ENTER    &kp 1  &kp BSPC
+                                &kp LCTRL     &mo RAISE     &kp SPACE    &kp ENTER    &kp 1     &kp BSPC
             >;
         };
 
@@ -77,13 +77,13 @@
             //                               |    LCTRL | MO lay 1| SPACE  |                   | ENTER   | Lower | BSPC
 
             bindings = <
-&bt BT_NXT  &trans    &trans     &trans     &trans     &kp LBKT     &kp RBKT     &kp 7  &kp 8     &kp 9  &trans
+&bt BT_NXT  &trans    &trans     &trans     &trans     &kp LBKT     &kp RBKT     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans
 
-&bt BT_PRV  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &kp LPAR     &kp RPAR     &kp 4  &kp 5     &kp 6  &kp MINUS
+&bt BT_PRV  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &kp LPAR     &kp RPAR     &kp KP_NUMBER_4  &kp N5           &kp N6           &kp MINUS
 
-&bt BT_CLR  &trans    &trans     &trans     &trans     &kp F6       &bootloader  &kp 1  &kp 2     &kp 3  &kp FSLH
+&bt BT_CLR  &trans    &trans     &trans     &trans     &kp F6       &bootloader  &kp N1           &kp N2           &kp N3           &kp FSLH
 
-                                 &kp LCTRL  &mo RAISE  &kp SPACE    &kp ENTER    &kp 1  &kp BSPC
+                                 &kp LCTRL  &mo RAISE  &kp SPACE    &kp ENTER    &kp 1            &kp BSPC
             >;
         };
     };
