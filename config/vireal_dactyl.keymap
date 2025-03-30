@@ -81,13 +81,13 @@
             //                               |    LCTRL | MO lay 1| SPACE  |                   | ENTER   | Lower | BSPC
 
             bindings = <
-&bt BT_NXT  &trans    &trans     &trans     &trans     &kp LBKT     &kp RBKT         &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans
+&bt BT_NXT  &trans    &trans     &trans     &bt BT_CLR  &kp LBKT     &kp RBKT         &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans
 
-&bt BT_PRV  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &kp LPAR     &kp RPAR         &kp KP_NUMBER_4  &kp N5           &kp N6           &kp MINUS
+&bt BT_NXT  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END     &kp LPAR     &kp RPAR         &kp KP_NUMBER_4  &kp N5           &kp N6           &kp MINUS
 
-&bt BT_CLR  &trans    &trans     &trans     &trans     &kp F6       &kp KP_NUMBER_0  &kp N1           &kp N2           &kp N3           &kp PIPE
+&bt BT_PRV  &trans    &trans     &trans     &trans      &kp F6       &kp KP_NUMBER_0  &kp N1           &kp N2           &kp N3           &kp PIPE
 
-                                 &kp LCTRL  &mo RAISE  &kp SPACE    &kp ENTER        &kp 1            &kp BSPC
+                                 &kp LCTRL  &mo RAISE   &kp SPACE    &kp ENTER        &kp 1            &kp BSPC
             >;
         };
     };
