@@ -60,9 +60,9 @@
 
 &kp LEFT_SHIFT  &kp LS(LT)    &kp LS(GT)       &kp LS(LPAR)     &kp LS(RPAR)      &kp LPAR         &kp LG(UP)     &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &kp EQUAL
 
-&kp LEFT_ALT    &rgb_ug RGB_HUI   &rgb_ug RGB_EFF  &kp LEFT_CONTROL  &screenshot      &mkp MB3       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp BSLH
+&kp LEFT_ALT    &trans        &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &kp LEFT_CONTROL  &screenshot      &mkp MB3       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp BSLH
 
-                                               &kp LEFT_GUI     &none       &kp SPACE        &kp ENTER    &mo NUMPAD       &kp BSPC
+                                               &kp LEFT_GUI     &none             &kp SPACE        &mkp MB2       &mo NUMPAD      &mkp MB1
             >;
         };
 
@@ -98,7 +98,7 @@
 
 &bt BT_NXT            &kp HOME       &kp PG_UP                          &kp PG_DN  &kp END     &kp LPAR     &kp K_VOLUME_DOWN  &kp KP_NUMBER_4  &kp N5           &kp N6           &kp DOT
 
-&bt BT_PRV            &rgb_ug RGB_COLOR_HSB(128,100,100)         &trans                             &trans     &trans      &kp F6       &kp KP_NUMBER_0    &kp N1           &kp N2           &kp N3           &kp PIPE
+&bt BT_PRV            &trans         &trans                             &trans     &trans      &kp F6       &kp KP_NUMBER_0    &kp N1           &kp N2           &kp N3           &kp PIPE
 
                                                                         &kp LCTRL  &mo RAISE   &kp SPACE    &kp ENTER          &kp 1            &kp BSPC
             >;
