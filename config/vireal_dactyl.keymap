@@ -16,7 +16,10 @@
         screenshot: screenshot {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_4>;
+            bindings =
+                <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_4>,
+                <&macro_tap>;
+
             label = "SCREENSHOT";
         };
     };
@@ -75,7 +78,7 @@
 
 &kp CAPSLOCK  &kp LBKT   &kp RBKT  &kp LS(LBRC)  &kp LS(RBRC)  &kp SQT          &kp LS(DQT)  &msc SCRL_UP  &kp UP    &kp RIGHT  &kp PLUS
 
-&bt BT_PRV    &kp TILDE  &trans    &trans        &trans        &kp LA(SPACE)    &kp K_PP     &kp LEFT      &kp DOWN  &kp RIGHT  &kp FSLH
+&bt BT_PRV    &kp TILDE  &trans    &trans        &trans        &kp LC(SPACE)    &kp K_PP     &kp LEFT      &kp DOWN  &kp RIGHT  &kp FSLH
 
                                    &kp LCTRL     &mo 3         &kp SPACE        &kp ENTER    &kp 1         &kp BSPC
             >;
@@ -90,13 +93,13 @@
             //                               |    LCTRL | MO lay 1| SPACE  |                   | ENTER   | Lower | BSPC
 
             bindings = <
-&kp C_BRIGHTNESS_INC  &kp C_BRI_DEC  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &trans     &bt BT_CLR  &kp LBKT     &kp RBKT         &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans
+&kp C_BRIGHTNESS_INC  &kp C_BRI_DEC  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &trans     &bt BT_CLR  &kp LBKT     &kp K_VOLUME_UP    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans
 
-&bt BT_NXT            &kp HOME       &kp PG_UP                          &kp PG_DN  &kp END     &kp LPAR     &kp RPAR         &kp KP_NUMBER_4  &kp N5           &kp N6           &kp MINUS
+&bt BT_NXT            &kp HOME       &kp PG_UP                          &kp PG_DN  &kp END     &kp LPAR     &kp K_VOLUME_DOWN  &kp KP_NUMBER_4  &kp N5           &kp N6           &kp DOT
 
-&bt BT_PRV            &trans         &trans                             &trans     &trans      &kp F6       &kp KP_NUMBER_0  &kp N1           &kp N2           &kp N3           &kp PIPE
+&bt BT_PRV            &trans         &trans                             &trans     &trans      &kp F6       &kp KP_NUMBER_0    &kp N1           &kp N2           &kp N3           &kp PIPE
 
-                                                                        &kp LCTRL  &mo RAISE   &kp SPACE    &kp ENTER        &kp 1            &kp BSPC
+                                                                        &kp LCTRL  &mo RAISE   &kp SPACE    &kp ENTER          &kp 1            &kp BSPC
             >;
         };
     };
