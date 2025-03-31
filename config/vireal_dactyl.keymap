@@ -78,7 +78,7 @@
 
 &kp CAPSLOCK  &kp LBKT   &kp RBKT  &kp LS(LBRC)  &kp LS(RBRC)  &kp SQT          &kp LS(DQT)  &msc SCRL_UP  &kp UP    &kp RIGHT  &kp PLUS
 
-&bt BT_PRV    &kp TILDE  &trans    &trans        &trans        &kp LC(SPACE)    &kp K_PP     &kp LEFT      &kp DOWN  &kp RIGHT  &kp FSLH
+&kp LEFT_ALT  &kp TILDE  &trans    &trans        &trans        &kp LC(SPACE)    &kp K_PP     &kp LEFT      &kp DOWN  &kp RIGHT  &kp FSLH
 
                                    &kp LCTRL     &mo 3         &kp SPACE        &kp ENTER    &kp 1         &kp BSPC
             >;
