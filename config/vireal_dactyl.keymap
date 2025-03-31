@@ -62,7 +62,7 @@
 
 &kp LEFT_ALT    &rgb_ug RGB_HUI   &rgb_ug RGB_EFF  &kp LEFT_CONTROL  &screenshot      &mkp MB3       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp BSLH
 
-                                               &kp LEFT_GUI     &none             &kp SPACE        &mkp MB2       &mo NUMPAD      &mkp MB1
+                                               &kp LEFT_GUI     &none       &kp SPACE        &kp ENTER    &mo NUMPAD       &kp BSPC
             >;
         };
 
