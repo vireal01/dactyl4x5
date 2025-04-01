@@ -56,7 +56,7 @@
             //                              |    LCTRL | MO lay 1| SPACE   |                   | ENTER   | Lower | BSPC
 
             bindings = <
-&kp ESC         &kp LS(EXCL)  &kp LS(AT)       &kp LS(POUND)    &kp LS(DLLR)      &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)    &kp LS(STAR)    &kp LS(LPAR)     &kp LS(MINUS)
+&kp ESC         &kp LS(EXCL)  &kp LS(AT)       &kp LS(POUND)    &kp LS(DLLR)      &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)    &kp LS(STAR)    &kp LS(LPAR)     &kp MINUS
 
 &kp LEFT_SHIFT  &kp LS(LT)    &kp LS(GT)       &kp LS(LPAR)     &kp LS(RPAR)      &kp LPAR         &kp LG(UP)     &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &kp EQUAL
 
