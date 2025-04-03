@@ -14,13 +14,15 @@ config ZMK_KEYBOARD_NAME
 # Display on the left side too
 config ZMK_DISPLAY
     default y
+config ZMK_RGB_UNDERGLOW
+    default y
 endif
 
 if SHIELD_VIREAL_DACTYL_RIGHT || SHIELD_VIREAL_DACTYL_LEFT
 config ZMK_SPLIT
     default y
 config ZMK_STUDIO
-    default n
+    default y
 endif
 
 if ZMK_DISPLAY
