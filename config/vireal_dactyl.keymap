@@ -58,7 +58,7 @@
             bindings = <
 &kp ESC         &kp LS(EXCL)  &kp LS(AT)       &kp LS(POUND)    &kp LS(DLLR)      &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)    &kp LS(STAR)    &kp LS(LPAR)     &kp MINUS
 
-&kp LEFT_SHIFT  &kp LS(LT)    &kp LS(GT)       &kp LS(LPAR)     &kp LS(RPAR)      &kp LPAR         &kp LG(UP)     &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &kp EQUAL
+&kp LEFT_SHIFT  &kp LS(LT)    &kp LS(GT)       &kp LS(LPAR)     &kp LS(RPAR)      &none            &kp LG(UP)     &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &kp EQUAL
 
 &kp LEFT_ALT    &trans        &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &kp LEFT_CONTROL  &screenshot      &mkp MB3       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp BSLH
 
