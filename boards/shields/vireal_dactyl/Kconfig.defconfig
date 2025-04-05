@@ -7,6 +7,9 @@ config ZMK_SPLIT_ROLE_CENTRAL
 config ZMK_DISPLAY
     default y
 endif
+config ZMK_RGB_UNDERGLOW
+    default y
+endif
 
 if SHIELD_VIREAL_DACTYL_LEFT
 config ZMK_KEYBOARD_NAME
