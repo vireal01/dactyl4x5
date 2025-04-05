@@ -6,7 +6,6 @@ config ZMK_SPLIT_ROLE_CENTRAL
 # Enable display on the central side (right)
 config ZMK_DISPLAY
     default y
-endif
 config ZMK_RGB_UNDERGLOW
     default y
 endif
