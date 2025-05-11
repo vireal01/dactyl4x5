@@ -5,7 +5,7 @@ config ZMK_SPLIT_ROLE_CENTRAL
     default y
 # Enable display on the central side (right)
 config ZMK_DISPLAY
-    default y
+    default n
 config ZMK_RGB_UNDERGLOW
     default n
 endif
@@ -15,7 +15,7 @@ config ZMK_KEYBOARD_NAME
     default "vireal-dactyl-l"
 # Display on the left side too
 config ZMK_DISPLAY
-    default y
+    default n
 config ZMK_RGB_UNDERGLOW
     default n
 endif
