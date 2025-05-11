@@ -10,6 +10,7 @@
 #define RAISE   1
 #define LOWER   2
 #define NUMPAD  3
+#define GAMING  4
 
 / {
     macros {
