@@ -32,7 +32,7 @@
             #binding-cells = <0>;
             flavor = "tap-preferred";
             tapping-term-ms = <150>;
-            bindings = <&sl GAMING>, <&trans>;
+            bindings = <&sl GAMING>;
         };
     };
 
