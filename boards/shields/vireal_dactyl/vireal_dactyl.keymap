@@ -110,7 +110,7 @@
 
 &kp G  &kp LSHFT  &kp A  &kp S     &kp D  &kp F        &kp H    &kp J   &kp K      &kp L    &kp SEMI
 
-&kp B  &kp LCTRL  &kp Z  &kp X     &kp C  &kp V        &kp N    &kp M   &kp COMMA  &kp DOT  &kp FSLH
+&kp B  &kp LCTRL  &kp Z  &kp X     &kp C  &kp V        &kp N    &kp M   &kp COMMA  &kp DOT  &tog 0
 
                          &kp LGUI  &mo 1  &kp SPACE    &kp RET  &trans  &kp BSPC
             >;
