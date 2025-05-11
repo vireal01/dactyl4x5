@@ -10,7 +10,7 @@
     chosen {
         zmk,physical-layout = &vireal_physical_layout;
         zephyr,display = &oled;  // Add reference to display
-        zmk,underglow = &led_strip; // Added Led
+//        zmk,underglow = &led_strip; // Added Led
     };
 
     default_transform: keymap_transform_0 {
