@@ -25,6 +25,17 @@
         };
     };
 
+    behaviors {
+        gaming_layer_toggle {
+            compatible = "zmk,behavior-hold-tap";
+            label = "GAMING_LAYER_TOGGLE";
+            #binding-cells = <0>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <150>;
+            bindings = <&sl GAMING>, <&trans>;
+        };
+    }
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -96,7 +107,7 @@
             bindings = <
 &kp C_BRIGHTNESS_INC  &kp C_BRI_DEC  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &trans     &bt BT_CLR  &kp LBKT     &kp K_VOLUME_UP    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &bt BT_NXT
 
-&bt BT_NXT            &kp HOME       &kp PG_UP                          &kp PG_DN  &kp END     &sl GAMING        &kp K_VOLUME_DOWN  &kp KP_NUMBER_4  &kp N5           &kp N6           &bt BT_PRV
+&bt BT_NXT            &kp HOME       &kp PG_UP                          &kp PG_DN  &kp END     &gaming_layer_toggle        &kp K_VOLUME_DOWN  &kp KP_NUMBER_4  &kp N5           &kp N6           &bt BT_PRV
 
 &bt BT_PRV            &trans         &trans                             &trans     &trans      &sl DEFAULT        &kp KP_NUMBER_0    &kp N1           &kp N2           &kp N3           &kp PIPE
 
