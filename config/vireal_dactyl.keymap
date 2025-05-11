@@ -34,7 +34,7 @@
             tapping-term-ms = <150>;
             bindings = <&sl GAMING>, <&trans>;
         };
-    }
+    };
 
     keymap {
         compatible = "zmk,keymap";
